@@ -1,0 +1,20 @@
+@media screen and (max-width: 400px) {
+    .navbar-brand-full {
+        margin-left: 5%;
+        object-fit: scale-down;
+    }   
+
+    .branch-name {
+        display: none !important;
+    }
+
+    .branch {
+        padding-left: 0 !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-brand-full {
+        margin-left: -80%;
+    }    
+}

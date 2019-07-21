@@ -1,0 +1,296 @@
+.flex {
+  display: flex;
+  align-items: center;
+  &--center {
+    justify-content: center;
+  }
+  &--right {
+    justify-content: flex-end;
+  }
+  &--left {
+    justify-content: flex-start;
+  }
+  &--stretch {
+    justify-content: space-between;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: 0px !important;
+  font-weight: 700;
+}
+
+// Custom label for Form.Item
+label {
+  margin-bottom: 0px;
+}
+
+// Custom Layout Ant design
+.ant-layout {
+  background: transparent;
+}
+
+.ant-layout-header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  text-align: right;
+  background: white;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.25);
+  padding: 0px 30px;
+  right: 0px;
+  transition: padding-left 0.25s, padding-right 0.25s, width 0.25s, flex 0.25s;
+}
+
+.sidebar-lg-show {
+  .ant-layout-header {
+    padding-left: 230px;
+  }
+}
+
+.sidebar-lg-show.sidebar-minimized.brand-minimized {
+  .ant-layout-header {
+    padding-left: 80px;
+  }
+}
+
+.ant-layout-content {
+  margin-top: calc(3rem + 50px);
+}
+
+// Fix loading button Ant design
+.anticon {
+  vertical-align: 0;
+}
+
+// Fix layout for Ant button with custom icon
+.ant-btn-custom-icon-only {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+// Customer default header
+.app-header .nav-item {
+  min-width: auto;
+}
+
+.img-avatar {
+  margin: 0 1.5rem 0 0.3rem !important;
+  height: 26px !important;
+  width: 26px;
+  object-fit: cover;
+}
+
+.no-avatar {
+  margin: 0 1.5rem 0 0.3rem !important;
+  background-color: #1890ff;
+  color: white;
+  font-size: 18px;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.dropdown-item {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+// Custom react table
+.ReactTable {
+  height: calc(100vh - 55px - 50px - 7rem);
+}
+
+.rt-tr.-odd,
+.rt-tr.-even {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.rt-th.rt-resizable-header {
+  padding: 15px !important;
+}
+
+.rt-td {
+  padding: 0.625rem 1rem !important;
+}
+
+// Scale image for Antd Avatar
+.avatar__object-fit--cover {
+  img {
+    object-fit: cover;
+  }
+}
+
+// Styles for disabled Antd button
+.ant-btn-primary-disabled,
+.ant-btn-primary.disabled,
+.ant-btn-primary[disabled],
+.ant-btn-primary-disabled:hover,
+.ant-btn-primary.disabled:hover,
+.ant-btn-primary[disabled]:hover,
+.ant-btn-primary-disabled:focus,
+.ant-btn-primary.disabled:focus,
+.ant-btn-primary[disabled]:focus,
+.ant-btn-primary-disabled:active,
+.ant-btn-primary.disabled:active,
+.ant-btn-primary[disabled]:active,
+.ant-btn-primary-disabled.active,
+.ant-btn-primary.disabled.active,
+.ant-btn-primary[disabled].active {
+  color: rgba(0, 0, 0, 0.25) !important;
+  background-color: #f5f5f5 !important;
+  border-color: #d9d9d9 !important;
+  text-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+// custom style for react table
+$cell-padding: 0.625rem 1rem;
+
+.ReactTable {
+  .rt-noData {
+    z-index: 0;
+  }
+  .-pagination {
+    .-pageJump {
+      margin: 0 3px;
+    }
+    .-previous,
+    .-next {
+      flex: 1;
+    }
+    .-center {
+      flex: none;
+    }
+  }
+
+  .rt-thead {
+    .rt-th {
+      padding: $cell-padding;
+    }
+  }
+
+  .rt-tbody {
+    .rt-tr {
+      align-items: center;
+    }
+    .rt-td {
+      padding: $cell-padding;
+      text-align: center;
+    }
+    .rt-expandable {
+      padding: 7px 5px;
+    }
+  }
+}
+
+.rtb-container {
+  border: 1px solid #c2cfd6;
+  border-top: none;
+  background: #fff;
+  max-height: calc(100vh - 191px);
+}
+
+.rtb-container-md {
+  border: 1px solid #c2cfd6;
+  border-top: none;
+  background: #fff;
+  max-height: 600px;
+  overflow-y: scroll;
+}
+
+.rtb-card-header {
+  border: 1px solid #c2cfd6;
+  border-bottom: none;
+}
+
+.rtb-card-header-above-input {
+  border: 0.5px solid #c2cfd6;
+  border-bottom: none;
+}
+
+.rtb-sub-row {
+  padding: 0.75rem 1.25rem;
+}
+
+.rtb-ul-notes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.css-vj8t7z {
+  width: 100%;
+}
+
+.imgPreview {
+  text-align: center;
+  margin: 5px 15px;
+  height: 100px;
+  width: 100px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-top: 5px solid gray;
+  border-bottom: 5px solid gray;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.invalid-feedback {
+  display: block;
+}
+
+// Custome tooltip when valid form reactstrap
+.invalid-tooltip {
+  position: relative;
+  display: inline-block !important;
+  margin-top: 0.2rem !important;
+}
+
+.mce-tinymce.mce-container.mce-panel {
+  border: 0 !important;
+}
+
+.item-text-color {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  width: max-content;
+  margin: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+  position: relative;
+  text-align: center;
+  float: left;
+}
+
+@media screen and (max-width: 750px) {
+  .container-fluid {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .container-fluid {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+}

@@ -1,0 +1,30 @@
+/*
+ *
+ * {{ properCase name }} reducer
+ *
+ */
+
+import { createReducer, createActions } from 'reduxsauce';
+import { fromJS } from 'immutable';
+
+/* ------------- Types and Action Creators ------------- */
+
+const { Types, Creators } = createActions({
+  {{ camelCase name }}Request: null,
+});
+
+export const {{ properCase name }}Types = Types;
+export default Creators;
+
+/* ------------- Initial State ------------- */
+
+const INITIAL_STATE = fromJS({
+});
+
+/* ------------- Reducers ------------- */
+
+
+/* ------------- Hookup Reducers To Types ------------- */
+
+export const reducer = createReducer(INITIAL_STATE, {
+});
