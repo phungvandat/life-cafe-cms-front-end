@@ -1,0 +1,80 @@
+@import '../../scss/variables';
+
+.upload-image {
+  position: relative;
+  &__upload {
+    cursor: pointer;
+    width: 200px;
+    padding: 0;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__image-wrapper {
+    width: 100%;
+  }
+  &__image {
+    height: auto;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0.25rem;
+  }
+  &__ease-img {
+    border-top: 35px solid rgba(0, 0, 0, 0.5);
+    border-left: 35px solid transparent;
+    position: absolute;
+    right: 0;
+    padding: 0;
+    &:focus {
+      outline: none;
+    }
+    i {
+      position: absolute;
+      right: 3px;
+      bottom: 18px;
+      font-size: 16px;
+      color: white;
+    }
+  }
+  &__ease-img--rounded {
+    cursor: pointer;
+    text-shadow: 2px 2px 2px black;
+    transform: translateY(70%);
+    transition: all .2s ease-out;
+    visibility: hidden;
+    position: absolute;
+    left: 62px;
+    bottom: 15px;
+    font-size: 18px;
+    color: white;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__no-image {
+    border: 1px solid #e4e7ea;
+    background-color: lighten(#6c757d, 50);
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      font-size: 2rem;
+      color: #6c757d;
+      &:hover {
+        color: #5a6268;
+        border-color: #5a6268;
+      }
+    }
+  }
+}
+
+// animation
+.upload-image--animation:hover .upload-image__ease-img--rounded {
+  transform: translateY(0%);
+  transition: all .2s ease-in;
+  visibility: visible;
+}

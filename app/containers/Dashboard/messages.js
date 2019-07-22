@@ -73,8 +73,4 @@ export default defineMessages({
     id: `${scope}.earningOfBranch`,
     defaultMessage: 'Earning of each Branch',
   },
-  categoriesOfBooking: {
-    id: `${scope}.categoriesOfBooking`,
-    defaultMessage: 'Categories of booking',
-  },
 })

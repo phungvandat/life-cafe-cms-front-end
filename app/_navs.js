@@ -13,7 +13,17 @@ export default {
         variant: 'info',
         text: 'NEW',
       },
-      rolesAccess: [ROLES.CLINIC_ADMIN, ROLES.MODERATOR, ROLES.CONSULTANT, ROLES.TECHNICIAN],
+      rolesAccess: [ROLES.ADMIN, ROLES.MASTER],
+    },
+    {
+      name: <FormattedMessage {...messages.Categories} />,
+      url: '/categories',
+      icon: 'fa fa-list-ul',
+      badge: {
+        variant: 'info',
+        text: 'NEW',
+      },
+      rolesAccess: [ROLES.ADMIN, ROLES.MASTER],
     },
   ],
 }

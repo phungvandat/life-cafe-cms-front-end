@@ -5,7 +5,7 @@ import { fromJS } from 'immutable'
 
 const { Types, Creators } = createActions({
   signIn: ['params', 'actionSuccess'],
-  signInSuccess: ['user'],
+  signInSuccess: ['user', 'token'],
   signInFailure: ['error'],
 
   signOut: null,
@@ -23,6 +23,7 @@ export const INITIAL_STATE = fromJS({
   user: {},
   error: '',
   isFetching: false,
+  token: '',
 })
 
 /* ------------- Reducers ------------- */
@@ -30,11 +31,12 @@ export const INITIAL_STATE = fromJS({
 // Handle signin
 const signIn = state => state.merge({ isSigninPending: true, isSignin: false })
 
-const signInSuccess = (state, { user }) =>
+const signInSuccess = (state, { user, token }) =>
   state.merge({
     isSigninPending: false,
     isSignin: true,
     user,
+    token,
   })
 
 const signInFailure = (state, { error }) =>

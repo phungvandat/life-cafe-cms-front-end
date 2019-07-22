@@ -22,18 +22,17 @@ function* appRootSagas() {
 */
 function* startupWorkingFlow({ history }) {
   try {
-    const user = yield select(state => state.user.get('user').toJS())
+    const token = yield select(state => state.user.get('token'))
     const isSignin = yield select(state => state.user.get('isSignin'))
-    const selectedClinicBranch = yield select(state => state.app.get('selectedClinicBranch').toJS())
     if (isSignin) {
-      if (Object.keys(selectedClinicBranch).length <= 0) {
-        yield put(replace('/dashboard'))
-      } else if (
-        history.location.pathname === '/signin' ||
-        history.location.pathname === '/signup') {
+      if (
+        history.location.pathname !== '/signin' &&
+        history.location.pathname !== '/signup'
+      ){
         yield put(replace('/'))
       }
-      setToken(user.token)
+
+      setToken(token)
       yield put(AppActions.getAppReady(true))
     } else {
       if (

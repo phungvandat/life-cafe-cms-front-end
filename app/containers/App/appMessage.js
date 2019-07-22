@@ -9,6 +9,6 @@ export default defineMessages({
   },
   warningContent: {
     id: `${scope}.warningContent`,
-    defaultMessage: 'You first have to specify a clinic to continue using Life Cafe CMS',
+    defaultMessage: 'You first have to specify a admin to continue using Life Cafe CMS',
   },
 })

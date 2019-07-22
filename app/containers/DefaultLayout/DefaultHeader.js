@@ -28,19 +28,11 @@ const defaultProps = {}
 
 /* eslint-disable react/prefer-stateless-function */
 class DefaultHeader extends Component {
+  // eslint-disable-next-line no-useless-constructor
   constructor(props) {
     super(props)
-    this.clinicModalRef = React.createRef()
   }
 
-  handleToggleModalUpdateClinicBranch = () => {
-    const { selectedClinicBranch, warning } = this.props
-    if (Object.keys(selectedClinicBranch).length <= 0) {
-      warning()
-    } else {
-      this.clinicModalRef.current.props.toggleModal()
-    }
-  }
 
   render() {
     const {

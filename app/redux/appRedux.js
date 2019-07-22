@@ -19,8 +19,6 @@ export default Creators
 
 export const INITIAL_STATE = fromJS({
   isReady: false,
-  updateClinicBranchPending: false,
-  selectedClinicBranch: {},
   error: '',
 })
 
