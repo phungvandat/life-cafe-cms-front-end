@@ -14,9 +14,9 @@ export default function* userRootSagas() {
 
 function* signIn({ params }) {
   try {
-    const { user } = yield call(userAPI.signIn, params)
-    yield put(UserActions.signInSuccess(user))
-    setToken(user.token)
+    const { user, token } = yield call(userAPI.signIn, params)
+    yield put(UserActions.signInSuccess(user, token))
+    setToken(token)
     yield put(AppActions.showSuccessRequest(`Welcome ${user.fullname}`))
     yield put(replace('/'))
   } catch (error) {

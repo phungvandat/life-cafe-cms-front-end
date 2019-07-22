@@ -21,10 +21,6 @@ export default defineMessages({
     id: `${scope}.SupportedLanguages`,
     defaultMessage: 'Supported Languages',
   },
-  YouHaveNotChosenClinic: {
-    id: `${scope}.YouHaveNotChosenClinic`,
-    defaultMessage: "You've not chosen clinic yet",
-  },
   Account: {
     id: `${scope}.Account`,
     defaultMessage: 'Account',
@@ -33,14 +29,6 @@ export default defineMessages({
     id: `${scope}.logout`,
     defaultMessage: 'Logout',
   },
-  clinicList: {
-    id: `${scope}.clinicList`,
-    defaultMessage: 'Clinic list',
-  },
-  updateClinic: {
-    id: `${scope}.updateClinic`,
-    defaultMessage: 'Update clinic',
-  },
   vietnamese: {
     id: `${scope}.vietnamese`,
     defaultMessage: 'Tiếng Việt',
@@ -48,22 +36,6 @@ export default defineMessages({
   english: {
     id: `${scope}.english`,
     defaultMessage: 'English',
-  },
-  Bookings: {
-    id: `${scope}.Bookings`,
-    defaultMessage: 'Bookings',
-  },
-  NewBooking: {
-    id: `${scope}.NewBooking`,
-    defaultMessage: 'New booking',
-  },
-  allBooking: {
-    id: `${scope}.allBooking`,
-    defaultMessage: 'All booking',
-  },
-  BookingsList: {
-    id: `${scope}.BookingsList`,
-    defaultMessage: 'Bookings list',
   },
   CheckoutList: {
     id: `${scope}.CheckoutList`,
@@ -84,22 +56,6 @@ export default defineMessages({
   Prescription: {
     id: `${scope}.Prescription`,
     defaultMessage: 'Prescription',
-  },
-  Booking: {
-    id: `${scope}.Booking`,
-    defaultMessage: 'Booking',
-  },
-  BookingList: {
-    id: `${scope}.BookingList`,
-    defaultMessage: 'Booking List',
-  },
-  BookingUpdate: {
-    id: `${scope}.BookingUpdate`,
-    defaultMessage: 'Update Booking',
-  },
-  BookingDetail: {
-    id: `${scope}.BookingDetail`,
-    defaultMessage: 'Booking Detail',
   },
   CreateTreatmentPackage: {
     id: `${scope}.CreateTreatmentPackage`,
@@ -122,112 +78,6 @@ export default defineMessages({
     defaultMessage: 'Update Prescription',
   },
 
-  // Clinic categories
-  eye: {
-    id: `${scope}.eye`,
-    defaultMessage: 'Eye',
-  },
-  nose: {
-    id: `${scope}.nose`,
-    defaultMessage: 'Nose',
-  },
-  mouth: {
-    id: `${scope}.mouth`,
-    defaultMessage: 'Mouth',
-  },
-  skin: {
-    id: `${scope}.skin`,
-    defaultMessage: 'Skin',
-  },
-  face: {
-    id: `${scope}.face`,
-    defaultMessage: 'Face',
-  },
-  chest: {
-    id: `${scope}.chest`,
-    defaultMessage: 'Chest',
-  },
-  waist: {
-    id: `${scope}.waist`,
-    defaultMessage: 'Waist',
-  },
-  vagina: {
-    id: `${scope}.vagina`,
-    defaultMessage: 'Vagina',
-  },
-  nails: {
-    id: `${scope}.nails`,
-    defaultMessage: 'Nails',
-  },
-  others: {
-    id: `${scope}.others`,
-    defaultMessage: 'Others',
-  },
-
-  Settings: {
-    id: `${scope}.Settings`,
-    defaultMessage: 'Settings',
-  },
-  Staffs: {
-    id: `${scope}.Staffs`,
-    defaultMessage: 'Staffs',
-  },
-  Profile: {
-    id: `${scope}.Profile`,
-    defaultMessage: 'Clinic Infomation',
-  },
-  Business: {
-    id: `${scope}.Business`,
-    defaultMessage: 'Business',
-  },
-  Clinics: {
-    id: `${scope}.Clinics`,
-    defaultMessage: 'Clinics',
-  },
-  Messenger: {
-    id: `${scope}.Messenger`,
-    defaultMessage: 'Messenger',
-  },
-  zaloMessenger: {
-    id: `${scope}.zaloMessenger`,
-    defaultMessage: 'Zalo',
-  },
-  Facebook: {
-    id: `${scope}.Facebook`,
-    defaultMessage: 'Facebook',
-  },
-  LifeCafe: {
-    id: `${scope}.LifeCafe`,
-    defaultMessage: 'Life Cafe',
-  },
-  fbCustomers: {
-    id: `${scope}.fbCustomers`,
-    defaultMessage: 'Facebook customers',
-  },
-  clinicCustomers: {
-    id: `${scope}.clinicCustomers`,
-    defaultMessage: 'Clinic customers',
-  },
-  Customers: {
-    id: `${scope}.Customers`,
-    defaultMessage: 'Customers',
-  },
-  SaleMonitoring: {
-    id: `${scope}.SaleMonitoring`,
-    defaultMessage: 'Sale Monitoring',
-  },
-  OverviewReportSale: {
-    id: `${scope}.OverviewReportSale`,
-    defaultMessage: 'Sales',
-  },
-  OverviewReportTechnician: {
-    id: `${scope}.OverviewReportTechnician`,
-    defaultMessage: 'Technicians',
-  },
-  OverviewReportConsultant: {
-    id: `${scope}.OverviewReportConsultant`,
-    defaultMessage: 'Consultants',
-  },
   // React table
   noDataText: {
     id: `${scope}.noDataText`,
@@ -294,8 +144,8 @@ export default defineMessages({
     id: `${scope}.Products`,
     defaultMessage: 'Products',
   },
-  ProductCategories: {
-    id: `${scope}.ProductCategories`,
+  Categories: {
+    id: `${scope}.Categories`,
     defaultMessage: 'Categories',
   },
   ProductOrders: {
