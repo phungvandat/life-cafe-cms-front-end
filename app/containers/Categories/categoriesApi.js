@@ -17,14 +17,9 @@ function updateCategory(categoryID, params) {
   return request.put(`/categories/${categoryID}`, params)
 }
 
-function uploadImages(data) {
-  return request.post('upload/images', data)
-}
-
 export {
   getCategories,
   getCategory,
   createCategory,
   updateCategory,
-  uploadImages,
 }

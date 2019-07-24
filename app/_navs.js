@@ -25,5 +25,15 @@ export default {
       },
       rolesAccess: [ROLES.ADMIN, ROLES.MASTER],
     },
+    {
+      name: <FormattedMessage {...messages.Products} />,
+      url: '/products',
+      icon: 'fa fa-shopping-cart',
+      badge: {
+        variant: 'info',
+        text: 'NEW',
+      },
+      rolesAccess: [ROLES.ADMIN, ROLES.MASTER],
+    },
   ],
 }
