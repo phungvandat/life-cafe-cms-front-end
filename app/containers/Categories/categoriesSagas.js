@@ -7,6 +7,7 @@ import {
 import CategoriesActions, { CategoriesTypes } from './categoriesRedux'
 import AppActions from '../../redux/appRedux'
 import * as api from './categoriesApi'
+import imageAPI from '../../services/imageApi'
 
 function* categoriesRootSagas() {
   yield all([
@@ -49,10 +50,10 @@ function* createCategoryRequest({ params, actionSuccess }) {
   try {
     const { photoSelected } = params
     if (photoSelected) {
-      const formDataPhoto = new FormData()
-      formDataPhoto.append('images', photoSelected)
-      const { links } = yield call(api.uploadImages, formDataPhoto)
-      params.photo = links[0]
+      const links = yield call(imageAPI.uploadImages, [photoSelected])
+      if (links){
+        params.photo = links[0]
+      }
     }
     yield call(api.createCategory, params)
 
@@ -77,10 +78,10 @@ function* updateCategoryRequest({ categoryID, params, originalCategory, actionSu
       (parentCategoryID !== originalCategory.parentCategory) ||
       (slug && slug !== originalCategory.slug) || photoSelected) {
       if (photoSelected) {
-        const formDataPhoto = new FormData()
-        formDataPhoto.append('images', photoSelected)
-        const { links } = yield call(api.uploadImages, formDataPhoto)
-        params.photo = links[0]
+        const links = yield call(imageAPI.uploadImages, [photoSelected])
+        if (links){
+          params.photo = links[0]
+        }
       }
 
       yield call(api.updateCategory, categoryID, params)

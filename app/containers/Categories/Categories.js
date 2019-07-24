@@ -31,7 +31,6 @@ import CategoriesActions, { reducer } from './categoriesRedux'
 import UploadImage from '../../components/UploadImage'
 import messages from './messages'
 import { isDark } from '../../utils/helper'
-import configs from '../../configures/configs'
 import './categories.scss'
 
 const TreeNode = TreeSelect.TreeNode
@@ -76,7 +75,7 @@ class Categories extends Component {
         Cell: row => (
           <img // eslint-disable-line
             className="img-avatar"
-            src={`${configs.SERVER_URL}/${row.value}` || null}
+            src={row.value}
           >
           </img>
         ),
@@ -459,7 +458,7 @@ class Categories extends Component {
                   <div style={{ display: 'flex', width: '50px' }}>
                     <UploadImage
                       name='categoryPhoto'
-                      image={photo ? `${configs.SERVER_URL}/${photo}` : photo}
+                      image={photo}
                       onChange={this.handleOnChangePhoto}
                       onRef={ref => { this.uploadImage = ref }}
                     />
