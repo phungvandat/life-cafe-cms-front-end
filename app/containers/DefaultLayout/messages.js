@@ -37,46 +37,6 @@ export default defineMessages({
     id: `${scope}.english`,
     defaultMessage: 'English',
   },
-  CheckoutList: {
-    id: `${scope}.CheckoutList`,
-    defaultMessage: 'Checkout list ',
-  },
-  TreatmentPackages: {
-    id: `${scope}.TreatmentPackages`,
-    defaultMessage: 'Treatment packages',
-  },
-  serviceConfig: {
-    id: `${scope}.serviceConfig`,
-    defaultMessage: 'Services',
-  },
-  midCategories: {
-    id: `${scope}.midCategories`,
-    defaultMessage: 'Mid categories',
-  },
-  Prescription: {
-    id: `${scope}.Prescription`,
-    defaultMessage: 'Prescription',
-  },
-  CreateTreatmentPackage: {
-    id: `${scope}.CreateTreatmentPackage`,
-    defaultMessage: `Create Treatment Package`,
-  },
-  UpdateTreatmentPackage: {
-    id: `${scope}.UpdateTreatmentPackage`,
-    defaultMessage: `Update Treatment Package`,
-  },
-  Prescriptions: {
-    id: `${scope}.Prescriptions`,
-    defaultMessage: `Prescriptions`,
-  },
-  CreatePrescription: {
-    id: `${scope}.CreatePrescription`,
-    defaultMessage: 'Create Prescription',
-  },
-  UpdatePrescription: {
-    id: `${scope}.UpdatePrescription`,
-    defaultMessage: 'Update Prescription',
-  },
 
   // React table
   noDataText: {
@@ -108,30 +68,6 @@ export default defineMessages({
     defaultMessage: 'rows',
   },
 
-  day: {
-    id: `${scope}.day`,
-    defaultMessage: 'Day',
-  },
-  month: {
-    id: `${scope}.month`,
-    defaultMessage: 'Month',
-  },
-  year: {
-    id: `${scope}.year`,
-    defaultMessage: 'Year',
-  },
-  forever: {
-    id: `${scope}.forever`,
-    defaultMessage: 'Forever',
-  },
-  report: {
-    id: `${scope}.report`,
-    defaultMessage: 'Report',
-  },
-  LoadMore: {
-    id: `${scope}.LoadMore`,
-    defaultMessage: 'Load more notifycation',
-  },
   YouHave: {
     id: `${scope}.YouHave`,
     defaultMessage: 'You have ',
@@ -167,26 +103,5 @@ export default defineMessages({
   OrderDetail: {
     id: `${scope}.OrderDetail`,
     defaultMessage: 'Order detail',
-  },
-  // Conversation status
-  open: {
-    id: `${scope}.open`,
-    defaultMessage: 'Open',
-  },
-  pending: {
-    id: `${scope}.pending`,
-    defaultMessage: 'Pending',
-  },
-  booked: {
-    id: `${scope}.booked`,
-    defaultMessage: 'Booked',
-  },
-  spam: {
-    id: `${scope}.spam`,
-    defaultMessage: 'Spam',
-  },
-  justask: {
-    id: `${scope}.justask`,
-    defaultMessage: 'justask',
   },
 })

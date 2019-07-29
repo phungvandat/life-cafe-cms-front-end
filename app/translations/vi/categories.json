@@ -1,0 +1,23 @@
+{
+  "app.containers.Categories.title": "Danh mục sản phẩm",
+  "app.containers.Categories.CreateCategory": "Tạo mới danh mục",
+  "app.containers.Categories.UpdateCategory": "Cập nhật danh mục",
+  "app.containers.Categories.Create": "Tạo danh mục",
+  "app.containers.Categories.Update": "Cập nhật",
+  "app.containers.Categories.Cancel": "Huỷ",
+  "app.containers.Categories.Name": "Tên",
+  "app.containers.Categories.Slug": "Slug",
+  "app.containers.Categories.Parent": "Danh mục cha",
+  "app.containers.Categories.Photo": "Hình ảnh",
+  "app.containers.Categories.ListCategories": "Danh sách danh mục sản phẩm",
+  "app.containers.Categories.No": "STT",
+  "app.containers.Categories.Action": "Hành động",
+  "app.containers.Categories.PleaseSelectParentCategory": "Chọn một danh mục",
+  "app.containers.Categories.NameIsRequired": "Tên không được bỏ trống",
+  "app.containers.Categories.NameMustBeBetweenFrom2To100": "Tên phải từ 2 đến 100 kí tự",
+  "app.containers.Categories.PhotoIsRequired": "Hình ảnh không được bỏ trống",
+  "app.containers.Categories.FillOutName": "Điền tên danh mục",
+  "app.containers.Categories.SlugIsRequired": "Slug không được bỏ trống",
+  "app.containers.Categories.SlugIsUnique": "Slug là duy nhất dùng cho SEO, không khuyến khích tự chỉnh sửa",
+  "app.containers.Categories.SlugIsInvalid": "Slug không chứa khoảng trắng và các ký tự đặc biệt"
+}

@@ -1,0 +1,14 @@
+{
+  "app.components.CustomerFormModal.customerInformation": "Thông tin khách hàng",
+  "app.components.CustomerFormModal.cancelText": "Huỷ",
+  "app.components.CustomerFormModal.okTextUpdate": "Cập nhật",
+  "app.components.CustomerFormModal.customerPhone": "Số điện thoại",
+  "app.components.CustomerFormModal.customerName": "Họ tên",
+  "app.components.CustomerFormModal.customerAddress": "Địa chỉ",
+  "app.components.CustomerFormModal.fillCustomerPhone": "Nhập số điện thoại khách hàng",
+  "app.components.CustomerFormModal.fillCustomerFullname": "Nhập họ tên khách hàng",
+  "app.components.CustomerFormModal.fillCustomerAddress": "Nhập địa chỉ khách hàng",
+  "app.components.CustomerFormModal.pleaseFillCustomerMobilePhone": "Vui lòng nhập số điện thoại khách hàng",
+  "app.components.CustomerFormModal.pleaseFillCorrectTypeOfMobilePhone": "Vui lòng nhập đúng số điện thoại",
+  "app.components.CustomerFormModal.pleaseFillCustomerName": "Vui lòng nhập họ tên khách hàng"
+}

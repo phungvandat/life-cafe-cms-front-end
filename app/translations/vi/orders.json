@@ -1,0 +1,19 @@
+{
+  "app.containers.Orders.import": "Nhập",
+  "app.containers.Orders.export": "Xuất",
+  "app.containers.Orders.created": "Đã tạo",
+  "app.containers.Orders.delivering": "Đang giao",
+  "app.containers.Orders.done": "Hoàn thành",
+  "app.containers.Orders.title": "Danh sách đơn hàng",
+  "app.containers.Orders.Detail": "Chi tiết",
+  "app.containers.Orders.No": "STT",
+  "app.containers.Orders.Actions": "Hành động",
+  "app.containers.Orders.Orders": "Danh sách đơn hàng",
+  "app.containers.Orders.Create": "Tạo đơn hàng",
+  "app.containers.Orders.DoneDate": "Ngày hoàn thành",
+  "app.containers.Orders.NoOrders": "Không có đơn hàng",
+  "app.containers.Orders.CreatedAt": "Ngày tạo",
+  "app.containers.Orders.Type": "Loại",
+  "app.containers.Orders.Products": "Sản phẩm",
+  "app.containers.Orders.Status": "Trạng thái"
+}

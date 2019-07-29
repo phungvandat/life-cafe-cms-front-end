@@ -1,0 +1,10 @@
+{
+  "app.components.ItemsModal.CancelText": "Huỷ",
+  "app.components.ItemsModal.OkText": "Đồng ý",
+  "app.components.ItemsModal.Price": "Giá",
+  "app.components.ItemsModal.Quantity": "SL kho",
+  "app.components.ItemsModal.OrderQuantity": "SL đặt",
+  "app.components.ItemsModal.CannotSelectProductByOutOfStock": "Sản phẩm tạm thời hết hàng",
+  "app.components.ItemsModal.PleaseSelectProductFirst": "Vui lòng chọn sản phẩm trước",
+  "app.components.ItemsModal.OrderRealPrice": "Giá thực"
+}
