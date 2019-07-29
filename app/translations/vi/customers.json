@@ -1,0 +1,9 @@
+{
+  "app.containers.Customers.No": "STT",
+  "app.containers.Customers.Title": "Khách hàng",
+  "app.containers.Customers.Avatar": "Hình ảnh",
+  "app.containers.Customers.Fullname": "Họ & tên",
+  "app.containers.Customers.PhoneNumber": "SĐT",
+  "app.containers.Customers.Address": "Địa chỉ",
+  "app.containers.Customers.Role": "Quyền"
+}

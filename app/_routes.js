@@ -9,6 +9,7 @@ const Products = React.lazy(() => import('./containers/Products'))
 const Product = React.lazy(() => import('./containers/Product'))
 const Orders = React.lazy(()=>import('./containers/Orders'))
 const Order = React.lazy(()=>import('./containers/Order'))
+const Customers = React.lazy(()=>import('./containers/Customers'))
 
 const routes = [
   {
@@ -61,6 +62,13 @@ const routes = [
     path: '/orders/:orderID',
     name: (<FormattedMessage {...messages.OrderDetail}/>),
     component: Order,
+    exact: true,
+    rolesAccess: [ROLES.ADMIN, ROLES.MASTER],
+  },
+  {
+    path: '/customers',
+    name: (<FormattedMessage {...messages.Customers}/>),
+    component: Customers,
     exact: true,
     rolesAccess: [ROLES.ADMIN, ROLES.MASTER],
   },
