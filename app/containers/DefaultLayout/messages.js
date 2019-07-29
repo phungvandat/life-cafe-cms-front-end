@@ -104,4 +104,8 @@ export default defineMessages({
     id: `${scope}.OrderDetail`,
     defaultMessage: 'Order detail',
   },
+  Customers: {
+    id: `${scope}.Customers`,
+    defaultMessage: 'Customers',
+  },
 })

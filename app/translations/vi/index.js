@@ -8,6 +8,7 @@ const order = require('./order.json')
 const orders = require('./orders.json')
 const product = require('./product.json')
 const products = require('./products.json')
+const customers = require('./customers.json')
 
 export const viTranslationMessages = {
   ...app,
@@ -20,4 +21,5 @@ export const viTranslationMessages = {
   ...orders,
   ...product,
   ...products,
+  ...customers,
 }

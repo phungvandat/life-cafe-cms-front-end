@@ -18,5 +18,6 @@
   "app.containers.DefaultLayout.nextText": "Tiếp theo",
   "app.containers.DefaultLayout.pageText": "Trang",
   "app.containers.DefaultLayout.ofText": "trên",
-  "app.containers.DefaultLayout.rowsText": "hàng"
+  "app.containers.DefaultLayout.rowsText": "hàng",
+  "app.containers.DefaultLayout.Customers": "Khách hàng"
 }

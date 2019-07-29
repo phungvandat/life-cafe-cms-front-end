@@ -7,7 +7,8 @@ export const ENGLISH_CODE = 'en'
 
 export const ROLES = {
   ADMIN: 'admin',
-  MASTER: "master",
+  MASTER: 'master',
+  USER: 'user',
 }
 
 export const DRUG_TYPES = {

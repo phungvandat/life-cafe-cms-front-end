@@ -41,5 +41,14 @@ export default {
       },
       rolesAccess: [ROLES.ADMIN, ROLES.MASTER],
     },
+    {
+      name: <FormattedMessage {...messages.Customers} />,
+      url: '/customers',
+      icon: 'fa fa-address-card',
+      badge: {
+        variant: 'info',
+      },
+      rolesAccess: [ROLES.ADMIN, ROLES.MASTER],
+    },
   ],
 }

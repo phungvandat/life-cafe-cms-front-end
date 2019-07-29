@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 import { connectRouter } from 'connected-react-router'
-import history from 'utils/history'
 import { reducer as notifications } from 'react-notification-system-redux'
+import history from './utils/history'
 
 /*
   - Function create root reducer work with immutable state
