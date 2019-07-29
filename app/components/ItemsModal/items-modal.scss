@@ -1,0 +1,38 @@
+.tp-checkbox {
+    &__button {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      text-align: left;
+      border: 2px solid #272361;
+      border-radius: 0.25rem;
+      &:focus {
+        outline: none;
+      }
+    }
+    &__button:hover {
+      background: none;
+      -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+      -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+      transition: all 0.3s ease 0s;
+    }
+    &__name {
+      color: #272361;
+      font-weight: bold;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      overflow: hidden;
+    }
+    input[type=checkbox] {
+      display: none;
+    }
+    input[type=checkbox]:checked + button {
+      box-shadow: 0 0 3px 1px #565fada1;
+      background-color: #565fad;
+      border-color: #565fad;
+    }
+    input[type=checkbox]:checked + button &__name {
+      color: white;
+    }
+  }

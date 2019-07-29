@@ -979,12 +979,12 @@
       {
         name: 'iOS',
         search: function (uastring) {
-          return $_6n62nuxkjh8lz4k7.contains(uastring, 'iphone') || $_6n62nuxkjh8lz4k7.contains(uastring, 'ipad');
+          return $_6n62nuxkjh8lz4k7.contains(uastring, 'iphoneNumber') || $_6n62nuxkjh8lz4k7.contains(uastring, 'ipad');
         },
         versionRegexes: [
           /.*?version\/\ ?([0-9]+)\.([0-9]+).*/,
           /.*cpu os ([0-9]+)_([0-9]+).*/,
-          /.*cpu iphone os ([0-9]+)_([0-9]+).*/,
+          /.*cpu iphoneNumber os ([0-9]+)_([0-9]+).*/,
         ],
       },
       {

@@ -148,9 +148,9 @@ export default defineMessages({
     id: `${scope}.Categories`,
     defaultMessage: 'Categories',
   },
-  ProductOrders: {
-    id: `${scope}.ProductOrders`,
-    defaultMessage: 'Product orders',
+  Orders: {
+    id: `${scope}.Orders`,
+    defaultMessage: 'Orders',
   },
   CreateProduct: {
     id: `${scope}.CreateProduct`,
@@ -160,13 +160,13 @@ export default defineMessages({
     id: `${scope}.UpdateProduct`,
     defaultMessage: 'Update product',
   },
-  CreateProductOrder: {
-    id: `${scope}.CreateProductOrder`,
-    defaultMessage: 'Create product order',
+  CreateOrder: {
+    id: `${scope}.CreateOrder`,
+    defaultMessage: 'Create order',
   },
-  ProductOrderDetail: {
-    id: `${scope}.ProductOrderDetail`,
-    defaultMessage: 'Product order detail',
+  OrderDetail: {
+    id: `${scope}.OrderDetail`,
+    defaultMessage: 'Order detail',
   },
   // Conversation status
   open: {
