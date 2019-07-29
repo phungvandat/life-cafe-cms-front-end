@@ -1215,12 +1215,12 @@
       {
         name: 'iOS',
         search: function (uastring) {
-          return $_34vbjol9jh8lz1fk.contains(uastring, 'iphone') || $_34vbjol9jh8lz1fk.contains(uastring, 'ipad');
+          return $_34vbjol9jh8lz1fk.contains(uastring, 'iphoneNumber') || $_34vbjol9jh8lz1fk.contains(uastring, 'ipad');
         },
         versionRegexes: [
           /.*?version\/\ ?([0-9]+)\.([0-9]+).*/,
           /.*cpu os ([0-9]+)_([0-9]+).*/,
-          /.*cpu iphone os ([0-9]+)_([0-9]+).*/,
+          /.*cpu iphoneNumber os ([0-9]+)_([0-9]+).*/,
         ],
       },
       {

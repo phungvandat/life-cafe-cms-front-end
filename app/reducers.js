@@ -12,6 +12,7 @@ function createReducer(injectedReducers = {}) {
   const rootReducer = combineReducers({
     notifications,
     language: require('./containers/LanguageProvider/languageRedux').reducer, // eslint-disable-line
+    customerForm: require('./components/CustomerFormModal/customerFormRedux').reducer, // eslint-disable-line
     user: require('./redux/userRedux').reducer, // eslint-disable-line
     app: require('./redux/appRedux').reducer, // eslint-disable-line
     ...injectedReducers,

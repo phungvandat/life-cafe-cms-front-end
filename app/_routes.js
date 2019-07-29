@@ -3,10 +3,12 @@ import { FormattedMessage } from 'react-intl'
 import messages from './containers/DefaultLayout/messages'
 import { ROLES } from './utils/constants'
 
-const Dashboard = React.lazy(() => import('containers/Dashboard'))
-const Categories = React.lazy(()=> import('containers/Categories'))
+const Dashboard = React.lazy(() => import('./containers/Dashboard'))
+const Categories = React.lazy(()=> import('./containers/Categories'))
 const Products = React.lazy(() => import('./containers/Products'))
 const Product = React.lazy(() => import('./containers/Product'))
+const Orders = React.lazy(()=>import('./containers/Orders'))
+const Order = React.lazy(()=>import('./containers/Order'))
 
 const routes = [
   {
@@ -39,6 +41,27 @@ const routes = [
     path: '/products/:productID',
     name: (<FormattedMessage {...messages.UpdateProduct} />),
     component: Product,
+    rolesAccess: [ROLES.ADMIN, ROLES.MASTER],
+  },
+  {
+    path: '/orders',
+    name: (<FormattedMessage {...messages.Orders}/>),
+    component: Orders,
+    exact: true,
+    rolesAccess: [ROLES.ADMIN, ROLES.MASTER],
+  },
+  {
+    path: '/orders/create',
+    name: (<FormattedMessage {...messages.CreateOrder}/>),
+    component: Order,
+    exact: true,
+    rolesAccess: [ROLES.ADMIN, ROLES.MASTER],
+  },
+  {
+    path: '/orders/:orderID',
+    name: (<FormattedMessage {...messages.OrderDetail}/>),
+    component: Order,
+    exact: true,
     rolesAccess: [ROLES.ADMIN, ROLES.MASTER],
   },
 ]

@@ -86,3 +86,16 @@ export const TITLE_NAMES = [
   { label: 'mrs', value: 'mrs' },
   { label: 'mr', value: 'mr' },
 ]
+
+// Type order 
+export const ORDER_TYPES = {
+  IMPORT: 'import',
+  EXPORT: 'export',
+}
+
+// Status order
+export const ORDER_STATUS = {
+  CREATED: 'created',
+  DELIVERING: 'delivering',
+  DONE: 'done',
+}
