@@ -1,0 +1,15 @@
+{
+  "app.containers.Products.title": "Danh sách sản phẩm",
+  "app.containers.Products.Update": "Cập nhật",
+  "app.containers.Products.Name": "Tên",
+  "app.containers.Products.Photo": "Hình ảnh",
+  "app.containers.Products.No": "STT",
+  "app.containers.Products.Action": "Hành động",
+  "app.containers.Products.Categories": "Danh mục",
+  "app.containers.Products.Price": "Giá",
+  "app.containers.Products.Quantity": "Số lượng",
+  "app.containers.Products.Create": "Tạo sản phẩm",
+  "app.containers.Products.NoProducts": "Sản phẩm rỗng",
+  "app.containers.Products.Products": "Danh sách sản phẩm",
+  "app.containers.Products.MainPhoto": "Hình ảnh chính"
+}

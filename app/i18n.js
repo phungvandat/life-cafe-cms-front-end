@@ -11,8 +11,8 @@ const addLocaleData = require('react-intl').addLocaleData; //eslint-disable-line
 const enLocaleData = require('react-intl/locale-data/en')
 const viLocaleData = require('react-intl/locale-data/vi')
 
-const enTranslationMessages = require('./translations/en.json')
-const viTranslationMessages = require('./translations/vi.json')
+const { enTranslationMessages } = require('./translations/en/index')
+const { viTranslationMessages } = require('./translations/vi/index')
 
 addLocaleData(enLocaleData)
 addLocaleData(viLocaleData)

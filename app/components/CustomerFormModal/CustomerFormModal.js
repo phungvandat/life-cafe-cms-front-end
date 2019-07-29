@@ -19,7 +19,7 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { } from 'utils/constants'
 import CustomerFormActions from './customerFormRedux'
-import messages from './customerFormModalMessages'
+import messages from './messages'
 import customerFormModalValidation from './customerFormModalValidation'
 
 

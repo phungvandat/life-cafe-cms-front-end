@@ -11,7 +11,6 @@ export default {
       icon: 'icon-speedometer',
       badge: {
         variant: 'info',
-        text: 'NEW',
       },
       rolesAccess: [ROLES.ADMIN, ROLES.MASTER],
     },
@@ -21,7 +20,6 @@ export default {
       icon: 'fa fa-list-ul',
       badge: {
         variant: 'info',
-        text: 'NEW',
       },
       rolesAccess: [ROLES.ADMIN, ROLES.MASTER],
     },
@@ -31,7 +29,6 @@ export default {
       icon: 'fa fa-shopping-cart',
       badge: {
         variant: 'info',
-        text: 'NEW',
       },
       rolesAccess: [ROLES.ADMIN, ROLES.MASTER],
     },
@@ -41,7 +38,6 @@ export default {
       icon: 'fa fa-shopping-bag',
       badge: {
         variant: 'info',
-        text: 'NEW',
       },
       rolesAccess: [ROLES.ADMIN, ROLES.MASTER],
     },

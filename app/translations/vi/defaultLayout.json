@@ -1,0 +1,22 @@
+{
+  "app.containers.DefaultLayout.Dashboard": "Tổng quan",
+  "app.containers.DefaultLayout.SupportedLanguages": "Ngôn ngữ hỗ trợ",
+  "app.containers.DefaultLayout.Account": "Tài khoản",
+  "app.containers.DefaultLayout.logout": "Đăng xuất",
+  "app.containers.DefaultLayout.vietnamese": "Vietnamese",
+  "app.containers.DefaultLayout.english": "Tiếng Anh",
+  "app.containers.DefaultLayout.Products": "Sản phẩm",
+  "app.containers.DefaultLayout.Categories": "Danh mục",
+  "app.containers.DefaultLayout.Orders": "Đơn hàng",
+  "app.containers.DefaultLayout.CreateProduct": "Tạo sản phẩm",
+  "app.containers.DefaultLayout.UpdateProduct": "Cập nhật sản phẩm",
+  "app.containers.DefaultLayout.CreateOrder": "Tạo đơn hàng",
+  "app.containers.DefaultLayout.OrderDetail": "Chi tiết đơn hàng",
+  "app.containers.DefaultLayout.noDataText": "Không có dữ liệu",
+  "app.containers.DefaultLayout.loadingText": "Đang tải",
+  "app.containers.DefaultLayout.previousText": "Trước đó",
+  "app.containers.DefaultLayout.nextText": "Tiếp theo",
+  "app.containers.DefaultLayout.pageText": "Trang",
+  "app.containers.DefaultLayout.ofText": "trên",
+  "app.containers.DefaultLayout.rowsText": "hàng"
+}
