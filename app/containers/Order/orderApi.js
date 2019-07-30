@@ -11,8 +11,6 @@ const getCustomerBaseOnPhone = (phoneNumber) =>
 
 const getOrder = (orderID) => request.get(`/orders/${orderID}`)
 
-const getCustomerBaseOnConversation = id => request.get(`/messenger/conversations/${id}`)
-
 const getClinicBranches = () => request.get('branches')
 
 const getCustomerSources = () => request.get(`/customer-sources`)
@@ -31,7 +29,6 @@ export default {
   getProductsToOrder,
   getCustomerBaseOnPhone,
   getOrder,
-  getCustomerBaseOnConversation,
   getClinicBranches,
   getCustomerSources,
   getCustomerBaseOnID,

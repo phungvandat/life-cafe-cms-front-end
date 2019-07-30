@@ -1,5 +1,5 @@
 import { all, takeLatest, put, call, select } from 'redux-saga/effects'
-import { removePhonePrefix } from 'utils/helper'
+import { removePhonePrefix } from '../../utils/helper'
 import * as api from './customerFormApi'
 import AppActions from '../../redux/appRedux'
 import CustomerFormActions, { CustomerFormTypes } from './customerFormRedux'
@@ -27,12 +27,14 @@ function* customerFormUpdateRequest({ customerID, params, actionSuccess }) {
       address: address !== original.address ? address : undefined,
     }
 
-    const { customer } = yield call(api.updateCustomer, customerID, data)
-  
+    const { user } = yield call(api.updateCustomer, customerID, data)
+    const customer = user
+
     yield put(CustomerFormActions.customerFormUpdateSuccess(customer))
     if (actionSuccess) {
       actionSuccess(customer)
     }
+  
     if (actionSuccessRedux) actionSuccessRedux(customer)
   } catch (error) {
     yield put(AppActions.showErrorRequest(error))

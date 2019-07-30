@@ -69,7 +69,7 @@ const getCustomerBaseOnPhoneSuccess = (state, { customers }) =>
 const getCustomerBaseOnPhoneFailure = (state, { error }) =>
   state.merge({ isGettingCustomers: false, error })
 
-// Handle getting customers base on conversation
+// Handle getting customers base on ID
 const getCustomerBaseOnID = state =>
   state.merge({ getCustomerBaseOnIDPending: true })
 

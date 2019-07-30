@@ -5,10 +5,10 @@ import { fromJS } from 'immutable'
 
 const { Types, Creators } = createActions({
   customerFormUpdateRequest: ['customerID', 'params', 'actionSuccess'],
-  customerFormUpdateSuccess: ['customer', 'conversationID'],
+  customerFormUpdateSuccess: ['customer'],
   customerFormUpdateFailure: ['error'],
 
-  showCustomerFormModal: ['customer', 'conversationID', 'actionSuccess'],
+  showCustomerFormModal: ['customer', 'actionSuccess'],
   hideCustomerFormModal: null,
 })
 
@@ -20,10 +20,8 @@ export default Creators
 export const INITIAL_STATE = fromJS({
   isUpdating: false,
   isVisible: false,
-  isGettingTreatmentPackages: false,
 
   customer: {},
-  conversationID: '',
 })
 
 /* ------------- Reducers ------------- */
@@ -43,11 +41,10 @@ const customerFormUpdateFailure = (state) => (
   state.merge({ isUpdating: false })
 )
 
-const showCustomerFormModal = (state, { customer, conversationID, actionSuccess }) => (
+const showCustomerFormModal = (state, { customer, actionSuccess }) => (
   state.merge({ 
     isVisible: true,
     customer,
-    conversationID,
     actionSuccess,
   })
 )
