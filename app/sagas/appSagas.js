@@ -25,13 +25,6 @@ function* startupWorkingFlow({ history }) {
     const token = yield select(state => state.user.get('token'))
     const isSignin = yield select(state => state.user.get('isSignin'))
     if (isSignin) {
-      if (
-        history.location.pathname !== '/signin' &&
-        history.location.pathname !== '/signup'
-      ){
-        yield put(replace('/'))
-      }
-
       setToken(token)
       yield put(AppActions.getAppReady(true))
     } else {
