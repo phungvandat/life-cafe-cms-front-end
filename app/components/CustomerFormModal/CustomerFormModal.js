@@ -33,7 +33,6 @@ class CustomerFormModal extends React.Component {
     customerID: '',
     original: {},
     validation: {},
-    source: undefined,
   }
 
   componentDidMount() { }
@@ -42,8 +41,6 @@ class CustomerFormModal extends React.Component {
     const {
       phoneNumber,
       fullname,
-      email,
-      source,
       validation,
     } = this.state
     if (
@@ -52,7 +49,7 @@ class CustomerFormModal extends React.Component {
       || validation.emailMessage
     ) {
       this.setState({
-        validation: customerFormModalValidation(phoneNumber, fullname, email, source),
+        validation: customerFormModalValidation(phoneNumber, fullname),
       })
     }
   }
@@ -169,11 +166,12 @@ class CustomerFormModal extends React.Component {
                   null
                   : <FormattedMessage {...messages[validation.phoneNumberMessage]} />
               }
+              required
             >
               <Input
                 type="text"
                 placeholder={intl.formatMessage(messages.fillCustomerPhone)}
-                prefix={<Icon type="phoneNumber" style={{ color: 'rgba(0,0,0,.25)' }} />}
+                prefix={<Icon type="phone" style={{ color: 'rgba(0,0,0,.25)' }} />}
                 value={phoneNumber}
                 onChange={e => this.setState({ phoneNumber: e.target.value }, () => {
                   this.changeValidationFields()
@@ -213,6 +211,7 @@ class CustomerFormModal extends React.Component {
         <Form.Item
           label={<FormattedMessage {...messages.customerAddress} />}
           colon={false}
+          required
         >
           <Input
             placeholder={intl.formatMessage(messages.fillCustomerAddress)}

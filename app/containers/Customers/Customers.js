@@ -9,10 +9,14 @@ import injectSaga from 'utils/injectSaga'
 import {
   Layout,
   Card,
+  Tooltip,
+  Button,
 } from 'antd'
 import ReactTable from 'react-table'
 import loGet from 'lodash/get'
 import defaultLayoutMessages from 'containers/DefaultLayout/messages'
+import CustomerFormModal from '../../components/CustomerFormModal'
+import CustomerFormActions from '../../components/CustomerFormModal/customerFormRedux'
 
 import saga from './customersSagas'
 import CustomersActions, { reducer } from './customersRedux'
@@ -25,9 +29,11 @@ class Customers extends Component {
     this.state = {
       skip: 0,
       limit: 50,
+      customer: {},
     }
 
     this.fetchData = this.fetchData.bind(this)
+    this.updateCustomer = this.updateCustomer.bind(this)
   }
 
   componentDidMount() {
@@ -48,15 +54,26 @@ class Customers extends Component {
     getCustomersRequest({ skip, limit, role: ROLES.USER })
   }
 
+  updateCustomer(customer) {
+    const { updateCustomer } = this.props
+    updateCustomer(customer)
+  }
+
   render() {
-    const { intl, customers, total, isGettingCustomers } = this.props
-    const { limit } = this.state
+    const {
+      intl,
+      customers,
+      total,
+      isGettingCustomers,
+      showCustomerFormModal,
+    } = this.props
+    const { limit, customer } = this.state
 
     const columns = [
       {
         Header: <FormattedMessage {...messages.No} />,
         id: "row",
-                Cell: data => data.index + 1, // eslint-disable-line
+        Cell: data => data.index + 1, // eslint-disable-line
         width: 60,
       },
       {
@@ -65,7 +82,7 @@ class Customers extends Component {
         headerStyle: { textAlign: 'center' },
         style: { textAlign: 'center' },
         Cell: data => (
-                    <img // eslint-disable-line
+          <img // eslint-disable-line
             className="img-avatar"
             src={loGet(data, ['row', 'avatar'])}
           >
@@ -76,10 +93,12 @@ class Customers extends Component {
       {
         Header: <FormattedMessage {...messages.Fullname} />,
         accessor: 'fullname',
+        width: 230,
       },
       {
         Header: <FormattedMessage {...messages.PhoneNumber} />,
         accessor: 'phoneNumber',
+        width: 230,
       },
       {
         Header: <FormattedMessage {...messages.Address} />,
@@ -90,6 +109,27 @@ class Customers extends Component {
         Header: <FormattedMessage {...messages.Role} />,
         accessor: 'role',
         width: 130,
+      },
+      {
+        Header: <FormattedMessage {...messages.Actions} />,
+        accessor: 'role',
+        Cell: row =>
+          <React.Fragment>
+            <Tooltip
+              title={<FormattedMessage {...messages.Edit} />}
+            >
+              <Button
+                onClick={() => {
+                  const customer = row.original
+                  showCustomerFormModal(customer, (customer) => this.setState({ customer }))
+                }}
+                type="primary"
+                icon="edit"
+                className="mr-1 ml-1"
+              />
+            </Tooltip>
+          </React.Fragment>,
+        width: 150,
       },
     ]
 
@@ -134,6 +174,10 @@ class Customers extends Component {
               ofText={intl.formatMessage(defaultLayoutMessages.ofText)}
               rowsText={intl.formatMessage(defaultLayoutMessages.rowsText)}
             />
+            <CustomerFormModal
+              customer={customer}
+              updateCustomerUI={this.updateCustomer}
+            />
           </Card>
 
         </Layout.Content>
@@ -147,6 +191,8 @@ Customers.propTypes = {
   getCustomersRequest: PropTypes.func,
   isGettingCustomers: PropTypes.bool,
   total: PropTypes.number,
+  showCustomerFormModal: PropTypes.func,
+  hideCustomerFormModal: PropTypes.func,
 }
 
 const withReducer = injectReducer({ key: 'customers', reducer })
@@ -164,6 +210,12 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => ({
   getCustomersRequest: (params, actionSuccess) =>
     dispatch(CustomersActions.getCustomersRequest(params, actionSuccess)),
+  showCustomerFormModal: (customer, actionSuccess) =>
+    dispatch(CustomerFormActions.showCustomerFormModal(customer, '', actionSuccess)),
+  hideCustomerFormModal: () =>
+    dispatch(CustomerFormActions.hideCustomerFormModal()),
+  updateCustomer: (customer) =>
+    dispatch(CustomersActions.updateCustomer(customer)),
 })
 
 const withConnect = connect(

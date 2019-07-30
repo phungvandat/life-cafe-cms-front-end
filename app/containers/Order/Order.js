@@ -94,6 +94,7 @@ export class Order extends React.Component {
     this.onClickSubmit = this.onClickSubmit.bind(this)
     this.resetData = this.resetData.bind(this)
     this.changeOrderRealPriceModal = this.changeOrderRealPriceModal.bind(this)
+    this.updateCustomerUI =  this.updateCustomerUI.bind(this)
   }
 
   componentDidMount() {
@@ -492,6 +493,10 @@ export class Order extends React.Component {
       style={{ height: 350 }}
       er
     />)
+  }
+
+  updateCustomerUI(customer) {
+    this.setState({ ...customer })
   }
 
 
@@ -1241,7 +1246,7 @@ function mapDispatchToProps(dispatch) {
     getCustomerBaseOnPhone: (phoneNumber) =>
       dispatch(OrderActions.getCustomerBaseOnPhone(phoneNumber)),
     showCustomerFormModal: (customer, actionSuccess) =>
-      dispatch(CustomerFormActions.showCustomerFormModal(customer, '', actionSuccess)),
+      dispatch(CustomerFormActions.showCustomerFormModal(customer, actionSuccess)),
     hideCustomerFormModal: () =>
       dispatch(CustomerFormActions.hideCustomerFormModal()),
     confirm: (title, content, okText, cancelText, actionSuccess, actionFailure) =>

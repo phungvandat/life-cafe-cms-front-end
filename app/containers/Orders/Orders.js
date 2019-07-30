@@ -142,7 +142,6 @@ class Orders extends Component {
                 />
               </Tooltip>
             </Link>
-
           </React.Fragment>,
         width: 150,
       },

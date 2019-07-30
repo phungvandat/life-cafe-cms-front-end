@@ -11,9 +11,9 @@ export default defineMessages({
     id: `${scope}.export`,
     defaultMessage: 'Export',
   },
-  pending: {
-    id: `${scope}.pending`,
-    defaultMessage: 'Pending',
+  created: {
+    id: `${scope}.created`,
+    defaultMessage: 'Created',
   },
   done: {
     id: `${scope}.done`,

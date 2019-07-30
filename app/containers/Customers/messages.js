@@ -31,4 +31,12 @@ export default defineMessages({
     id: `${scope}.Role`,
     defaultMessage: 'Role',
   },
+  Actions: {
+    id: `${scope}.Actions`,
+    defaultMessage: 'Actions',
+  },
+  Edit: {
+    id: `${scope}.Edit`,
+    defaultMessage: 'Edit',
+  },
 })
