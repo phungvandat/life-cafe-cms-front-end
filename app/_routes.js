@@ -16,12 +16,14 @@ const routes = [
     path: '/dashboard',
     name: (<FormattedMessage {...messages.Dashboard} />),
     component: Dashboard,
+    exact: true,
     rolesAccess: [ROLES.ADMIN, ROLES.MASTER],
   },
   {
     path: '/categories',
     name: (<FormattedMessage {...messages.Categories} />),
     component: Categories,
+    exact: true,
     rolesAccess: [ROLES.ADMIN, ROLES.MASTER],
   },
   {
@@ -42,6 +44,7 @@ const routes = [
     path: '/products/:productID',
     name: (<FormattedMessage {...messages.UpdateProduct} />),
     component: Product,
+    exact: true,
     rolesAccess: [ROLES.ADMIN, ROLES.MASTER],
   },
   {
